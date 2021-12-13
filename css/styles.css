@@ -1,0 +1,337 @@
+:root {
+    --white: #ffffff;
+    --white-low: #F5ECEC;
+    --gray: #D8D8D8;
+    --gray-low: #5A5555;
+    --red: #640A0A;
+    --red-low: #2E0606;
+    --gray-up: #737373;
+    --black: #000000;
+    --blue-up: #043539;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+/*Header*/
+body {
+    min-width: 320px;
+    overflow-x: none;
+}
+
+header {
+    width: 100%;
+    min-width: 320px;
+    height: 100vh;
+}
+
+header .header-fondo {
+    width: 100%;
+    min-width: 320px;
+    height: 100vh;
+    z-index: 1;
+}
+
+header .header-fondo picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header .header-text {
+    padding: 20px;
+    width: 100%;
+    min-width: 320px;
+    height: 100vh;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+}
+
+header .header-text .header_text-title {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .header-text .header_text-title span {
+    color: var(--white);
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+header .header-text .header_text_logros {
+    width: 100%;
+    text-align: center;
+}
+
+header .header-text .header_text_logros span {
+    color: var(--white);
+    font-size: 2rem;
+    line-height: 25px;
+}
+
+header .header-text .header-btn {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+header .header-text .header-btn a {
+    color: var(--white-low);
+    border: 1px solid var(--white-low);
+    padding: 10px 40px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+header .header-text .header_text-info {
+    position: absolute;
+    bottom: 0;
+    padding: 0 20px 20px 0;
+    min-width: 70%;
+}
+
+header .header-text .header_text-info span {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+/*Main*/
+main {
+    width: 100%;
+    min-height: 200vh;
+}
+/*About*/
+main .cont-about {
+    background-color: var(--gray);
+    width: 100%;
+    min-width: 320px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+main .cont-about .about-info {
+    width: 85%;
+    margin: 0 auto;
+}
+
+main .cont-about .about-info .cont-info-title {
+    width: 100%;
+}
+
+main .cont-about .about-info .cont-info-title .info-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: 1rem;
+}
+
+main .cont-about .about-info .divition {
+    background-color: var(--red);
+    width: 100%;
+    height: 0.2rem;
+    margin-top: 0.5rem;
+}
+
+main .cont-about .about-info .count-info-text {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+main .cont-about .about-info .count-info-text span {
+    color: var(--gray-low);
+}
+
+/*content info*/
+
+main .content {
+    width: 100%;
+    min-width: 320px;
+    height: 290vh;
+    background-color: var(--blue-up);
+}
+
+main .content .font-content {
+    width: 100%;
+    min-width: 320px;
+    height: 300vh;
+}
+
+main .content picture img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+main .content .about_cards {
+    position: absolute;
+    width: 100%;
+    min-width: 320px;
+    top: 200vh;
+}
+
+main .content .about_cards .know {
+    width: 85%;
+    height: 90vh;
+    margin: 2.5rem auto;
+    background-color: var(--white);
+}
+
+main .content .about_cards .know .img-card_sabias {
+    height: 50vh;
+    width: 100%;
+}
+
+main .content .about_cards .know picture img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+main .content .about_cards .know .text-know {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .content .about_cards .know .text-know span {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--gray-up);
+}
+
+main .content .about_cards .know .text-info-know {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+main .content .about_cards .know .text-info-know span {
+    line-height: 1.6rem;
+    font-weight: 100;
+    font-size: 1.1rem;
+}
+
+main .content .about_cards .know .divition {
+    background-color: var(--red);
+    width: 80%;
+    height: 0.2rem;
+    margin: 5rem auto 0;
+}
+
+main .content .contacts {
+    width: 85%;
+    background-color: var(--white);
+    margin: 0 auto 2.5rem;
+    height: 90vh;
+}
+
+main .content .contacts .img-contact {
+    width: 100%;
+    height: 40vh;
+}
+
+main .content .contacts .img-contact picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .content .contacts .contacts-title {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .content .contacts .contacts-title span {
+    font-size: 2rem;
+    font-weight: 100;
+    color: var(--red-low);
+}
+
+main .content .contacts .items-contact {
+    padding: 0 0 0 9rem;
+}
+
+main .content .contacts .items-contact li {
+    margin: 0.8rem 0;
+    font-size: 1.6rem;
+    color: var(--black);
+    font-weight: 300;
+}
+
+main .content .about_cards .who {
+    width: 85%;
+    margin: auto;
+    height: 90vh;
+}
+
+main .content .about_cards .who .img-who {
+    width: 100%;
+    height: 90vh;
+}
+
+main .content .about_cards .who .img-who img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .content .about_cards .who .cont-who-data {
+    position: relative;
+    width: 100%;
+    height: 83vh;
+    top: -46rem;
+}
+
+main .content .about_cards .who .cont-who-data .who-title {
+    width: 100%;
+    margin-top: 3.5rem;
+    margin-left: 2.5rem;
+}
+
+main .content .about_cards .who .cont-who-data .who-title span {
+    color: var(--white);
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+main .content .about_cards .who .cont-who-data .who-divition {
+    width: 5.3rem;
+    height: 0.6rem;
+    margin-top: 0.7rem;
+    background-color: var(--red);
+    margin-left: 2.5rem;
+}
+
+main .content .about_cards .who .cont-who-data .who-controllers {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 7.3rem;
+    text-align: center;
+}
+
+main .content .about_cards .who .cont-who-data .who-controllers span {
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: var(--white);
+}
